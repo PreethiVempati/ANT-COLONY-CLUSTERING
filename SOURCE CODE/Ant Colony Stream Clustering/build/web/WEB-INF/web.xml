@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ZOOExcelReader</servlet-name>
+        <servlet-class>excel.ZOOExcelReader</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewIrisDataset</servlet-name>
+        <servlet-class>com.clustergraph.ViewIrisDataset</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WINEExcelReader</servlet-name>
+        <url-pattern>/WINEExcelReader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ZOOExcelReader</servlet-name>
+        <url-pattern>/ZOOExcelReader</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewIrisDataset</servlet-name>
+        <url-pattern>/ViewIrisDataset</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>IRISExcelReader</servlet-name>
+        <servlet-class>excel.IRISExcelReader</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WINEExcelReader</servlet-name>
+        <servlet-class>excel.WINEExcelReader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IRISExcelReader</servlet-name>
+        <url-pattern>/IRISExcelReader</url-pattern>
+    </servlet-mapping>
+    <servlet-name/>
+    <servlet-class/>
+</web-app>
